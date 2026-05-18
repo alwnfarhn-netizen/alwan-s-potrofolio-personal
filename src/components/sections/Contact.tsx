@@ -171,7 +171,6 @@ export default function Contact() {
                     placeholder="Detail your requirements..."
                   />
                 </div>
-              </div>
 
                 <button 
                   type="submit"
