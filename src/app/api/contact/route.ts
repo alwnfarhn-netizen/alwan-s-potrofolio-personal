@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       to: ['alwnfarhn@gmail.com'], // Target email
       subject: `New Transmission from ${name}`,
       text: `Entity Name: ${name}\nComm Channel: ${email}\n\nPayload:\n${message}`,
-      reply_to: email,
+      replyTo: email,
     });
 
     if (error) {
