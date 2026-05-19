@@ -46,7 +46,7 @@ export default function RootLayout({
     <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${vt323.variable}`}>
       <body className="antialiased min-h-screen font-space bg-matte-black text-warm-white">
         {children}
-        {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
+        <GoogleAnalytics gaId="G-X4VJJY9D0Y" />
       </body>
     </html>
   );
