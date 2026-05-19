@@ -22,6 +22,7 @@ const vt323 = VT323({
 });
 
 import { seo, identity } from '@/data/content';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
   title: seo.title,
@@ -45,6 +46,7 @@ export default function RootLayout({
     <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${vt323.variable}`}>
       <body className="antialiased min-h-screen font-space bg-matte-black text-warm-white">
         {children}
+        {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
       </body>
     </html>
   );
